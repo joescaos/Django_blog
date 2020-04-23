@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    <h1>Delete post</h1> 
+    <form action="" method="post">
+        {% csrf_token %} 
+        <div class="form-group">
+          <label for="formGroupExampleInput"><h3>Deleting section</h3></label>
+          <p>Are you sure you want to delete "{{ post.title }}"?</p> 
+        <input type="submit" value="Confirm" /> 
+        </div>
+      </form>
+    
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %} 
+    <h1>Edit post</h1>
+    <form action="" method="post">
+        {% csrf_token %} 
+        <div class="form-group">
+          <label for="formGroupExampleInput"><h3>Welcome to the editing section</h3></label>
+          {{ form.as_p }} 
+          <button class="btn btn-dark"> Update</button>  
+        </div>
+      </form>
+{% endblock content %}
